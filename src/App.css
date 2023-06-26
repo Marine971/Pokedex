@@ -1,0 +1,61 @@
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.pokemon {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pokemon.active {
+  background-color: #f0f0f0;
+}
+
+.pokemon-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pokemon-type {
+  margin-bottom: 10px;
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.pokemon-stats {
+  font-size: 14px;
+}
+
+.selected-pokemon {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.selected-pokemon h2 {
+  margin-top: 0;
+}
+
+.type-badge {
+  background-color: gray;
+}
+
+.type-badge.green {
+  background-color: #78c850;
+}
+
+.type-badge.purple {
+  background-color: #a040a0;
+}
+
+/* Ajouter d'autres couleurs pour les autres types ici */
